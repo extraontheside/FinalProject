@@ -15,12 +15,15 @@ public class StoreBase {
     public void Enter (){
         Console.WriteLine(StartMessage);
     }
-    public void Encounter (int i, string walked){
+    public void Encounter (int i, string found){
         switch (i)
         {
             case 0:
-                Console.WriteLine("You've " + walked + " some " + objects[i]);
+                Console.WriteLine("You've " + found + " some " + objects[i]);
             break;
+
+            case 1:
+                Console.WriteLine()
         }
     }
 }
