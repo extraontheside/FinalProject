@@ -27,7 +27,12 @@ public class StoreBase {
             break;
 
             case 2:
-                Console.WriteLine("You've " + found)
+                Console.WriteLine("You've encountered a zombie!");
+                Game.
+            break;
+
+            default:
+                Console.WriteLine("There's hardly anything here.");
         }
     }
 }
