@@ -23,7 +23,11 @@ public class StoreBase {
             break;
 
             case 1:
-                Console.WriteLine()
+                Console.WriteLine("You've " + found + " some " + objects[i]);
+            break;
+
+            case 2:
+                Console.WriteLine("You've " + found)
         }
     }
 }
