@@ -18,6 +18,8 @@ public class Game
             case GameStateMachine.GameStates.Start:
                 Console.WriteLine("Please type in your name:");
                 name = Console.ReadLine();
+                Console.WriteLine("Your player name is " + name);
+                Console.WriteLine("Play commands: Play, End, Help");
         }
     }
 }
