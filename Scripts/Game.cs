@@ -8,4 +8,16 @@ public class Game
         Health.power = 100;
         
     }
+
+    private string gameState = "Start";
+    private GameStateMachine.GameStates toEnum;
+    public void Play()
+    {
+        switch (toEnum)
+        {
+            case GameStateMachine.GameStates.Start:
+                Console.WriteLine("Please type in your name:");
+                name = Console.ReadLine();
+        }
+    }
 }
