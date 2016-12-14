@@ -9,7 +9,10 @@ public class StoreBase {
         Console.WriteLine("Survivor");
     }
 
-    public string StartMessage;
+    public string StartMessage = "Hi";
+    public string EndMessage = "Later";
+    public string VictoryMessage "Congratulations";
+    public string DeathMessage "You have met a terrible fate";
     public bool entranceOpen = true;
     public string[] objects;
     public void Enter (){
