@@ -10,4 +10,11 @@ public class character
         strength = 20;
         dexterity = 10;
     } 
+    public bool isDead(){
+        if (health == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
