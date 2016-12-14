@@ -54,6 +54,20 @@ public class Game
                     Play();
                 }
                 break;
+
+            default:
+                Console.WriteLine(" is not a valid command.");
+                Play();
+                break;
         }
     }
+    public static void GameTimer()
+    {
+        System.Threading.Thread.Sleep(2000);
+    }
+    private LevelBase Store = new StoreLevel();
+    public static LevelBase 
+
+    public string name;
+    private int score;
 }
