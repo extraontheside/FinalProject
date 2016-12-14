@@ -20,6 +20,32 @@ public class Game
                 name = Console.ReadLine();
                 Console.WriteLine("Your player name is " + name);
                 Console.WriteLine("Play commands: Play, End, Help");
+
+                gameState = Console.ReadLine();
+
+                if(Enum.TryParse(gameState))
+                    Play();
+
+                break;
+
+            case GameStateMachine.GameStates.Died:
+                Console.WriteLine("You Died");
+                GameStateMachine.currentGameState = GameStateMachine.GameStates.End;
+                Play();
+                break;
+
+            case GameStateMachine.GameStates.End:
+                Console.WriteLine("Game Over");
+                Environment.Exit(0);
+                break;
+
+            case GameStateMachine.GameStates.Help:
+                Console.WriteLine("Ask someone who lived in the 90's?");
+                Play();
+                break;
+
+            case GameStateMachine.GameStates.Play:
+
         }
     }
 }
