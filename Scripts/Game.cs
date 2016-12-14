@@ -45,7 +45,15 @@ public class Game
                 break;
 
             case GameStateMachine.GameStates.Play:
-
+                while (Game.canPlay)
+                {
+                    Store.Enter();
+                    Random randomNum = new Random();
+                    Cave.Encounter(randomNum.Next(0, Store.objects.Length), "walked");
+                    GameTimer();
+                    Play();
+                }
+                break;
         }
     }
 }
