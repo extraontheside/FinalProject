@@ -20,4 +20,9 @@ public class character
     public void shout(){
         Console.WriteLine("Huzzah!");
     }
+    public bool isStarved(){
+        while (food) {
+            stillAlive = false;
+        }
+    }
 }
