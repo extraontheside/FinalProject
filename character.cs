@@ -21,8 +21,10 @@ public class character
         Console.WriteLine("Huzzah!");
     }
     public bool isStarved(){
-        while (food) {
+        while (hunger) {
             stillAlive = false;
+            return true;
         }
+        
     }
 }
