@@ -11,8 +11,10 @@ public class Game
 
     private string gameState = "Start";
     private GameStateMachine.GameStates toEnum;
+    private character Player = new character();
     public void Play()
     {
+
         switch (toEnum)
         {
             case GameStateMachine.GameStates.Start:
@@ -65,7 +67,7 @@ public class Game
     {
         System.Threading.Thread.Sleep(2000);
     }
-    private LevelBase Store = new StoreLevel();
+    private StoreBase Store = new StoreLevel();
     public static LevelBase 
 
     public string name;
