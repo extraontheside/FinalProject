@@ -17,4 +17,7 @@ public class character
             return false;
         }
     }
+    public void shout(){
+        Console.WriteLine("Huzzah!");
+    }
 }

@@ -1,7 +1,8 @@
 using system;
 public class zombie;
-{public zombie()
-    {
+{
+    public int scoreMultiplyer = 2;
+    public zombie(){
         switch(type)
         {
             case 0:

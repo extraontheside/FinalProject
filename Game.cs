@@ -11,6 +11,9 @@ public class Game
 
     private string gameState = "Start";
     private GameStateMachine.GameStates toEnum;
+    private list <zombie> deadZombieList;
+    private list <ammo> ammoList;
+    private list <weapon> weaponList;
     private character Player = new character();
     public void Play()
     {
@@ -52,7 +55,17 @@ public class Game
                     Store.Enter();
                     Random randomNum = new Random();
                     Cave.Encounter(randomNum.Next(0, Store.objects.Length), "walked");
+                    for (int x=0; x < deadZombieList.Length ; x++){
+                        character.shout;
+                    }
                     GameTimer();
+                    foreach (zombie z in deadZombieList)
+                    {
+                        score += (score*z.scoreMultiplyer);
+                    }
+                    foreach (weapon w in weaponList){
+                        score = score * 2;
+                    } 
                     Play();
                 }
                 break;
